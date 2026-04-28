@@ -1,7 +1,7 @@
 {
   "_meta": {
     "version": "1.1.0",
-    "description": "AI 日报系统配置文件 - 所有选项随时可调",
+    "description": "赛博牛马日报配置文件 - 所有选项随时可调",
     "last_modified": "2026-04-29"
   },
   "trigger": {

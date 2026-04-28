@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # ═══════════════════════════════════════════════════════════════
 #  config-manager.py — 配置管理器
-#  查看、修改日报系统的所有配置项
+#  查看、修改赛博牛马日报的所有配置项
 # ═══════════════════════════════════════════════════════════════
 
 import json
@@ -21,7 +21,7 @@ def save_config(cfg):
 
 def show_config(cfg):
     print("═" * 50)
-    print("  ⚙️  AI 日报系统 — 当前配置")
+    print("  ⚙️  赛博牛马日报 — 当前配置")
     print("═" * 50)
     print()
 
@@ -198,7 +198,7 @@ def main():
     elif cmd == "reset":
         import copy
         default = {
-            "_meta": {"version": "1.1.0", "description": "AI 日报系统配置文件 - 所有选项随时可调", "last_modified": "2026-04-29"},
+            "_meta": {"version": "1.1.0", "description": "赛博牛马日报配置文件 - 所有选项随时可调", "last_modified": "2026-04-29"},
             "trigger": {"mode": "manual", "auto_count_threshold": 5, "auto_time_hour": 23, "auto_time_minute": 0},
             "report_style": {"mode": "brief", "brief_max_lines": 15, "full_save_to_file": True},
             "task_types": cfg["task_types"],

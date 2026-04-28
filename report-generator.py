@@ -322,7 +322,7 @@ def send_report(message, channel="", target=""):
 
 # ── 主入口 ──
 def main():
-    parser = argparse.ArgumentParser(description="AI 日报/周报/月报生成器")
+    parser = argparse.ArgumentParser(description="赛博牛马日报 — 日报/周报/月报生成器")
     parser.add_argument("--date", default=datetime.now().strftime("%Y-%m-%d"), help="日期 YYYY-MM-DD")
     parser.add_argument("--brief", action="store_true", help="精简版（聊天推送用）")
     parser.add_argument("--week", action="store_true", help="生成周报")
