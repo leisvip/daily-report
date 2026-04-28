@@ -130,6 +130,10 @@ python3 config-manager.py reset                       # 重置默认
 | [07-troubleshooting](dev-guide/07-troubleshooting.md) | 常见问题 · 排错手册 |
 | [08-roadmap](dev-guide/08-roadmap.md) | 路线图 · 功能规划 |
 
+## 📈 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=leisvip/daily-report&type=Timeline)](https://star-history.com/#leisvip/daily-report&Timeline)
+
 ## 📄 License
 
 [MIT](LICENSE)
