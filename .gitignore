@@ -1,0 +1,18 @@
+# Data & Reports (runtime generated)
+data/
+reports/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo

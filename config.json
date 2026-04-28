@@ -1,0 +1,169 @@
+{
+  "_meta": {
+    "version": "1.1.0",
+    "description": "AI 日报系统配置文件 - 所有选项随时可调",
+    "last_modified": "2026-04-29"
+  },
+  "trigger": {
+    "mode": "manual",
+    "auto_count_threshold": 5,
+    "auto_time_hour": 23,
+    "auto_time_minute": 0
+  },
+  "report_style": {
+    "mode": "brief",
+    "brief_max_lines": 15,
+    "full_save_to_file": true
+  },
+  "task_types": {
+    "_doc": "Q3: 任务类型预设",
+    "_options": "preset_8 | preset_4 | custom（编辑下方 types 字段）",
+    "mode": "preset_8",
+    "types": {
+      "requirement": {
+        "emoji": "🔴",
+        "label": "需求开发",
+        "keywords": [
+          "需求",
+          "功能",
+          "开发",
+          "实现",
+          "接口",
+          "页面"
+        ]
+      },
+      "bugfix": {
+        "emoji": "🟡",
+        "label": "Bug 修复",
+        "keywords": [
+          "bug",
+          "修复",
+          "fix",
+          "报错",
+          "异常",
+          "崩溃"
+        ]
+      },
+      "review": {
+        "emoji": "🔵",
+        "label": "Code Review",
+        "keywords": [
+          "review",
+          "审查",
+          "CR",
+          "pr",
+          "mr"
+        ]
+      },
+      "tech": {
+        "emoji": "🟢",
+        "label": "技术建设",
+        "keywords": [
+          "重构",
+          "优化",
+          "架构",
+          "ci",
+          "cd",
+          "工具",
+          "脚本"
+        ]
+      },
+      "doc": {
+        "emoji": "📝",
+        "label": "文档输出",
+        "keywords": [
+          "文档",
+          "文档",
+          "md",
+          "说明",
+          "注释",
+          "wiki"
+        ]
+      },
+      "meeting": {
+        "emoji": "📅",
+        "label": "会议/沟通",
+        "keywords": [
+          "会议",
+          "沟通",
+          "评审",
+          "对齐",
+          "讨论"
+        ]
+      },
+      "research": {
+        "emoji": "🔍",
+        "label": "技术调研",
+        "keywords": [
+          "调研",
+          "研究",
+          "学习",
+          "分析",
+          "对比",
+          "选型"
+        ]
+      },
+      "other": {
+        "emoji": "🔧",
+        "label": "其他",
+        "keywords": []
+      }
+    },
+    "preset_4_types": {
+      "requirement": {
+        "emoji": "🔴",
+        "label": "需求开发"
+      },
+      "bugfix": {
+        "emoji": "🟡",
+        "label": "Bug 修复"
+      },
+      "tech": {
+        "emoji": "🟢",
+        "label": "技术建设"
+      },
+      "other": {
+        "emoji": "🔧",
+        "label": "其他"
+      }
+    }
+  },
+  "reminder": {
+    "mode": "count",
+    "count_threshold": 3,
+    "remind_interval": 0,
+    "quiet_hours": {
+      "enabled": true,
+      "start": "23:00",
+      "end": "08:00"
+    }
+  },
+  "report_scope": {
+    "mode": "all",
+    "week_start": "monday",
+    "month_report_day": 1
+  },
+  "general": {
+    "data_dir": "data",
+    "report_dir": "reports",
+    "timezone": "Asia/Shanghai",
+    "date_format": "YYYY-MM-DD",
+    "language": "zh-CN",
+    "log_level": "info"
+  },
+  "notification": {
+    "method": "cli",
+    "channel": "",
+    "target": "",
+    "webhook": {
+      "url": "http://127.0.0.1:18789/hooks/wake",
+      "token": "",
+      "timeout": 10
+    },
+    "quiet_hours": {
+      "enabled": true,
+      "start": "23:00",
+      "end": "08:00"
+    }
+  }
+}
